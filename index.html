@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>Catalogue Canapés Haut de Gamme</title>
@@ -23,15 +23,25 @@
       width: 100%;
       border-collapse: collapse;
       background-color: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
-    th, td {
+    th,
+    td {
       padding: 16px;
       text-align: center;
       border-bottom: 1px solid #ddd;
       font-size: 16px;
     }
+
+    .case {
+      padding: 16px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      font-size: 16px;
+    }
+
+
 
     th {
       background-color: #eaeaea;
@@ -58,7 +68,7 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0,0,0,0.8);
+      background-color: rgba(0, 0, 0, 0.8);
       justify-content: center;
       align-items: center;
     }
@@ -73,8 +83,18 @@
     #modal.close-area {
       cursor: pointer;
     }
+
+    .soustable {
+      border-collapse: collapse;
+      border: none;
+      border: none;
+      text-align: center;
+      padding: 0px !important;
+      margin: 0px;
+    }
   </style>
 </head>
+
 <body>
 
   <h1>Catalogue Canapés Haut de Gamme</h1>
@@ -87,6 +107,7 @@
         <th>Taille (cm)</th>
         <th>Dimensions du Carton (cm)</th>
         <th>Poids (kg)</th>
+        <th>Option</th>
       </tr>
     </thead>
     <tbody>
@@ -96,6 +117,7 @@
         <td>200 x 100 x H70</td>
         <td>118 x 72 x 37</td>
         <td>55.5</td>
+        <td>Extensible <br> <img src="YY-01-O.JPG" alt="YY-01-O" onclick="showModal(this.src)"> </td>
       </tr>
       <tr>
         <td>YY-02</td>
@@ -103,14 +125,611 @@
         <td>200 x 100 x H70</td>
         <td>118 x 72 x 48</td>
         <td>55.5</td>
+        <td>Extensible <br> <img src="YY-02-O.JPG" alt="YY-01-O" onclick="showModal(this.src)"> </td>
       </tr>
+<!-- cas ligne par 3 -->
       <tr>
         <td>YY-03</td>
-        <td><img src="YY-02.jpg" alt="YY-02" onclick="showModal(this.src)"></td>
-        <td>2 places 220 x 100 x H62</td>
-        <td>118 x 63 x 41</td>
-        <td>40</td>
+        <td><img src="YY-03.jpg" alt="YY-03" onclick="showModal(this.src)"></td>
+         <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">220 x 100 x H62</td>
+            </tr>
+            <tr>
+              <td class="case">260 x 100 x H62</td>
+            </tr>
+            <tr>
+              <td class="case">300 x 100 x H62</td>
+            </tr>
+          </table>
+        </td>
+        <<td class="soustable">
+          <table>
+            <tr>
+              <td class="case">118 x 63 x 41</td>
+            </tr>
+            <tr>
+              <td class="case">115 x 72 x 38</td>
+            </tr>
+            <tr>
+              <td class="case">118 x 63 X 41 / 31 x 31 x 85</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">40</td>
+            </tr>
+            <tr>
+              <td class="case">45</td>
+            </tr>
+            <tr>
+              <td class="case">66</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">2 places</td>
+            </tr>
+            <tr>
+              <td class="case">3 places</td>
+            </tr>
+            <tr>
+              <td class="case">4 places</td>
+            </tr>
+          </table>
+        </td>
       </tr>
+<!-- cas ligne par 2 -->
+      <tr>
+        <td>YY-04</td>
+        <td><img src="YY-04.jpg" alt="YY-04" onclick="showModal(this.src)"></td>
+         <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">220 x 100 x H72</td>
+            </tr>
+            <tr>
+              <td class="case">300 x 100 x H72</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">118 x 63 x 41</td>
+            </tr>
+            <tr>
+              <td class="case">118 x 63 X 41 / 31 x 31 x 85</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">50</td>
+            </tr>
+            <tr>
+              <td class="case">66</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">2 places</td>
+            </tr>
+            <tr>
+              <td class="case">3 places</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>YY-05</td>
+        <td>
+          <img src="YY-05.jpg" alt="YY-05" onclick="showModal(this.src)">
+          <img src="YY-05-O.jpg" alt="YY-05" onclick="showModal(this.src)">
+
+        </td>
+
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">263 x 100 x H70</td>
+            </tr>
+            <tr>
+              <td class="case">284 x 100 x H70</td>
+            </tr>
+            <tr>
+              <td class="case">304 x 200 x H70</td>
+            </tr>
+          </table>
+        </td>
+        <<td class="soustable">
+          <table>
+            <tr>
+              <td class="case">108 x 70 x 38 / 41 x 40 x 110</td>
+            </tr>
+            <tr>
+              <td class="case">108 x 72 x 41 / 41 x 40 x 110</td>
+            </tr>
+            <tr>
+              <td class="case">110 x 80 x 46 / 110 x 69 x 35 / 110 x 65 x 35</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">79</td>
+            </tr>
+            <tr>
+              <td class="case">81</td>
+            </tr>
+            <tr>
+              <td class="case">149</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">2 places</td>
+            </tr>
+            <tr>
+              <td class="case">3 places</td>
+            </tr>
+            <tr>
+              <td class="case">Big sofa </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>YY-06</td>
+        <td><img src="YY-06.JPG" alt="YY-06" onclick="showModal(this.src)"></td>
+        <td>230 x 96 x H68 + 80 x 150</td>
+        <td>110 x 47 x 42 + 110 x 43 x 40</td>
+        <td>58</td>
+        <td>3 places + angle</td>
+      </tr>
+      <tr>
+        <td>YY-07</td>
+        <td><img src="YY-07.JPG" alt="YY-07" onclick="showModal(this.src)"></td>
+        <td>270 x 95 x H62  + 175</td>
+        <td>110 x 47 x 42 + 110 x 43 x 39</td>
+        <td>71</td>
+        <td>3 places + angle</td>
+      </tr>
+      <tr>
+        <td>YY-08</td>
+        <td><img src="YY-08.JPG" alt="YY-08" onclick="showModal(this.src)"></td>
+        <td>277 x 100 x H82</td>
+        <td>117 x 62 x 35 / 118 x 48 x 38</td>
+        <td>78.5</td>
+        <td>3 places + angle <br> <img src="YY-08-O.JPG" alt="YY-08-O" onclick="showModal(this.src)"> </td>
+      </tr>
+      <tr>
+        <td>YY-09</td>
+        <td>
+          <img src="YY-09.jpg" alt="YY-09" onclick="showModal(this.src)">
+          <img src="YY-09-O.jpg" alt="YY-09" onclick="showModal(this.src)">
+          <br><img src="YY-09-O1.jpg" alt="YY-09" onclick="showModal(this.src)">
+
+</td>
+         <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">150 x 170 x H66</td>
+            </tr>
+            <tr>
+              <td class="case">300 x 170 x H66</td>
+            </tr>
+            <tr>
+              <td class="case">280 x 100 x H66</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">(155 x 35 x 35) x 2</td>
+            </tr>
+            <tr>
+              <td class="case">158 x 38 x 45 / 158 x 38 x 45 / 158 x 38 x 38 </td>
+            </tr>
+            <tr>
+              <td class="case">118 x 56 x 60 / 35 x 35 x 95</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">55,5</td>
+            </tr>
+            <tr>
+              <td class="case">117</td>
+            </tr>
+            <tr>
+              <td class="case">66</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">1 places</td>
+            </tr>
+            <tr>
+              <td class="case">2 places</td>
+            </tr>
+            <tr>
+              <td class="case">3 places - sofa</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>YY-10</td>
+        <td>
+          <img src="YY-10.jpg" alt="YY-10" onclick="showModal(this.src)">
+          <img src="YY-10-O.jpg" alt="YY-10" onclick="showModal(this.src)">
+          <br><img src="YY-10-O1.jpg" alt="YY-10" onclick="showModal(this.src)">
+        </td>
+         <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">272 x 100 x H61</td>
+            </tr>
+            <tr>
+              <td class="case">182 x 100 x H61</td>
+            </tr>
+            <tr>
+              <td class="case">200 x 100 x H61</td>
+            </tr>
+            <tr>
+              <td class="case">90 x 100 x 35</td>
+            </tr>
+          </table>
+        </td>
+        <<td class="soustable">
+          <table>
+            <tr>
+              <td class="case">1118 x 75 x 37 / 118 x 35 x 35</td>
+            </tr>
+            <tr>
+              <td class="case">118 x 42 x 46</td>
+            </tr>
+            <tr>
+              <td class="case">118 x 42 x 46</td>
+            </tr>
+            <tr>
+              <td class="case">100 x 31 x 31</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">65</td>
+            </tr>
+            <tr>
+              <td class="case">36</td>
+            </tr>
+            <tr>
+              <td class="case">40</td>
+            </tr>
+            <tr>
+              <td class="case">15</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">3 places </td>
+            </tr>
+            <tr>
+              <td class="case">2 places sans 1 accoudoir</td>
+            </tr>
+            <tr>
+              <td class="case">2 places</td>
+            </tr>
+            <tr>
+              <td class="case">Repose pied </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>YY-11</td>
+        <td><img src="YY-11.jpg" alt="YY-11" onclick="showModal(this.src)"></td>
+         <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">100 x 100 x H60</td>
+            </tr>
+            <tr>
+              <td class="case">340 x 102 x H60</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">35 x 35 x 125</td>
+            </tr>
+            <tr>
+              <td class="case">35 x 35 x 130 / 130 x 41 x 38</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">65</td>
+            </tr>
+            <tr>
+              <td class="case">.</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">1 place</td>
+            </tr>
+            <tr>
+              <td class="case">2 places</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>YY-12</td>
+        <td><img src="YY-12.jpg" alt="YY-12" onclick="showModal(this.src)"></td>
+         <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">90 x 90 x H65</td>
+            </tr>
+            <tr>
+              <td class="case">270 x 90 x H65</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">100 x 35 x 35</td>
+            </tr>
+            <tr>
+              <td class="case">100 x 35 x 35 / 3</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">.</td>
+            </tr>
+            <tr>
+              <td class="case">65</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">1 place</td>
+            </tr>
+            <tr>
+              <td class="case">3 places</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>YY-13</td>
+        <td><img src="YY-13.jpg" alt="YY-13" onclick="showModal(this.src)"></td>
+         <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">100 x 100 x H70</td>
+            </tr>
+            <tr>
+              <td class="case">85 x 85 x H70</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">.</td>
+            </tr>
+            <tr>
+              <td class="case">.</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">20</td>
+            </tr>
+            <tr>
+              <td class="case">17</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">1 place</td>
+            </tr>
+            <tr>
+              <td class="case">3 places</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>YY-14</td>
+        <td><img src="YY-14.JPG" alt="YY-14" onclick="showModal(this.src)"></td>
+        <td>270 x 95 x H62 - 175</td>
+        <td>110 x 42 x 47 / 2</td>
+        <td>72</td>
+        <td>2 places + lounge</td>
+      </tr>
+
+      <tr>
+        <td>YY-15</td>
+        <td><img src="YY-15.JPG" alt="YY-15" onclick="showModal(this.src)"></td>
+        <td>320 x 100 x H65 - repose pied 100 x 80 x H40</td>
+        <td>118 x 42 x 42 / 2 - 118 x 35 x 35 </td>
+        <td>78</td>
+        <td>3 places + repose pied</td>
+      </tr>
+
+      <tr>
+        <td>YY-16</td>
+        <td>
+          <img src="YY-16.jpg" alt="YY-16" onclick="showModal(this.src)">
+          <img src="YY-16-O.jpg" alt="YY-16" onclick="showModal(this.src)">
+
+        </td>
+         <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">280 x 100 x H60</td>
+            </tr>
+            <tr>
+              <td class="case">100 x 76 x H38</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">118 x 63 x 41 / 31 x 31 x 110</td>
+            </tr>
+            <tr>
+              <td class="case">100 x 31 x 31</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">66</td>
+            </tr>
+            <tr>
+              <td class="case">15</td>
+            </tr>
+          </table>
+        </td>
+        <td class="soustable">
+          <table>
+            <tr>
+              <td class="case">3 places</td>
+            </tr>
+            <tr>
+              <td class="case">repose pied</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>YY-17</td>
+        <td><img src="YY-17.JPG" alt="YY-17" onclick="showModal(this.src)"></td>
+        <td>220 x 105 x H88</td>
+        <td>100 x 100 x H88 </td>
+        <td>102</td>
+        <td>2 places </td>
+      </tr>
+
+      <tr>
+        <td>YY-18</td>
+        <td>
+          <img src="YY-18.JPG" alt="YY-18" onclick="showModal(this.src)">
+          <img src="YY-18-O.JPG" alt="YY-18" onclick="showModal(this.src)">
+        </td>
+        <td>240 x 100 x H68</td>
+        <td>118 x 70 x 36</td>
+        <td>54</td>
+        <td>3 places </td>
+      </tr>
+
+      <tr>
+        <td>YY-19</td>
+        <td>
+          <img src="YY-19.JPG" alt="YY-19" onclick="showModal(this.src)">
+          <img src="YY-19-O.JPG" alt="YY-19" onclick="showModal(this.src)">
+        </td>
+        <td>100 x 100 x H80</td>
+        <td></td>
+        <td></td>
+        <td>1 place - avec 1, 2 accoudoirs, ou sans</td>
+      </tr>
+
+      <tr>
+        <td>YY-20</td>
+        <td>
+          <img src="YY-20.JPG" alt="YY-20" onclick="showModal(this.src)">
+          <img src="YY-20-O.JPG" alt="YY-20" onclick="showModal(this.src)">
+        </td>
+        <td>280 x 95 x H75</td>
+        <td></td>
+        <td></td>
+        <td>2 places - repose pied</td>
+      </tr>
+
+      <tr>
+        <td>YY-21</td>
+        <td>
+          <img src="YY-21.JPG" alt="YY-21" onclick="showModal(this.src)">
+          <img src="YY-21-O.JPG" alt="YY-21" onclick="showModal(this.src)">
+        </td>
+        <td>200 x 90 x H73 - ouvert 200 x 115 x H36.5</td>
+        <td>125 x 35 x 35</td>
+        <td>36</td>
+        <td>1 place</td>
+      </tr>
+
+      <tr>
+        <td>YY-22</td>
+        <td>
+          <img src="YY-22.JPG" alt="YY-22" onclick="showModal(this.src)">
+        </td>
+        <td>300 x 103 x H70 - angle 170 x 115 x H70</td>
+        <td>125 x 46 x 52 / 2 - 125 x 46 x 52</td>
+        <td>80 - 40</td>
+        <td>3 places + angle</td>
+      </tr>
+
+      <tr>
+        <td>YY-23</td>
+        <td>
+          <img src="YY-23.JPG" alt="YY-23" onclick="showModal(this.src)">
+        </td>
+        <td>250 x 105 x H72 - Repose pied 73 x 73 x 430</td>
+        <td>118 x 35 x 35 / 2 - 29 x 29 x 85 </td>
+        <td>50 - 10</td>
+        <td>2 places + repose pied </td>
+      </tr>
+
       <!-- Ajoute d'autres lignes ici -->
     </tbody>
   </table>
@@ -132,4 +751,5 @@
   </script>
 
 </body>
+
 </html>
